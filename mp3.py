@@ -159,8 +159,8 @@ if __name__ == '__main__':
 
     # DELETE MP4
     video.close()
-    # os.remove(out_file)
-    # print("DELETED: ", out_file)
+    os.remove(out_file)
+    print("DELETED: ", out_file)
 
     audiofile = eyed3.load(new_file)
     print("audio: ", audiofile)
